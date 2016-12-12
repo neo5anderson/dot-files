@@ -1,0 +1,31 @@
+[user]
+    email = neo5anderson@icloud.com
+    name = Neo Anderson
+[push]
+    default = simple
+[core]
+    editor = vim
+    quotepath = false
+    excludesfile = ~/.gitignores
+[merge]
+    tool = meld
+[mergetool]
+    keepBackup = false
+[difftool]
+    prompt = false
+[alias]
+    co = checkout
+    br = branch
+    ct = commit
+    st = status
+    last = log -1 HEAD
+    unstage = reset HEAD --
+    uncreated = clean -df
+    unchanged = reset --hard
+    out = archive --format=zip --output
+    logg = log --graph --pretty=format:'%Cred%h%Creset - %C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+[receive]
+    ;denyDeleteCurrent = warn
+[color]
+    ui = auto
+
